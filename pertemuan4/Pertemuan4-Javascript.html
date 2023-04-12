@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="nama"></p>
+
+    <script>
+        // beberapa contoh variable
+       var nama = "Putri";
+       let umur = 17;
+       const memilikiAnak = false;
+       
+    //    nama = 35
+    //    document.write('umur sekarang: ' + nama);
+
+    //    cara melihat output script
+    //    alert('umur: ' + umur)
+    //    document.getElementById('name').innerHTML = nama
+       document.getElementsByClassName('nama')[0].innerHTML = nama
+
+    // untuk mengecek tipe suatu data menggunakan typeof
+    // tipe number
+    let num = 21.6;
+
+    // tipe string
+    var name = "Putri";
+
+    // tipe boolean
+    const isHasChildren = true;
+
+    // tipe object
+    const colorList = { colorName: 'merah' , colorName: 'kuning', colorName: 'hijau'}
+
+    // tipe array
+    const colorLists = ['Merah', 'Kuning']
+
+    // tipe function
+    const function1 = function () { }
+
+    console.log(typeof function1);
+
+
+    // contoh perbandingan
+        var x = 25;
+        var y = 10;
+        var z = "10";
+
+        var nama1 = "Putri";
+        var nama2 = "Putra";
+
+        console.log(x == y)
+        console.log(nama1 == nama2)
+        // console.log(x === z)
+        // console.log(x != y)
+        // console.log(x !== z)
+        // console.log(x >= y)
+        // console.log(x < y)
+
+        // contoh string
+        const myString = 'HELLO Wordl!'
+        const str = 'He said "Good bye!"' 
+        const str2 = "He said 'Good bye!'" 
+        // const myString2 = 'Hello Wordl!"  // ini salah
+
+        const str3 = "This is a \n paragraph og text."
+
+        console.log(str3.length) // cara menghitung panjang string
+
+        // manipulasi string
+        const sliceStr = str.slice(8, 19)
+        const replaceStr = str.replace('He', 'She')
+
+        console.log(myString.toLowerCase());
+        console.log(myString.toUpperCase());
+
+        if (colorLists.length > 17){
+            console.log('ok umurnya sudah diatas 17 tahun');
+        } else {
+            console.log('yahh umur kamu kurang dari 17 tahun');
+        }
+
+        if (colorLists.length > 5) {
+            console.log('isinya lebih besar dari 5');
+        } else {
+            console.log('isinya kurang nih,,,,');
+        }
+
+        if (umur > 40) {
+            console.log('umurnya sudah diatas 40 tahun');
+        } else if (umur >= 17){
+            console.log('umurnya sudah 17 tahun lohh atau sudah lebih besar dari 17 tahun')
+        } else {
+            console.log('kamu belum dewasa');
+        }
+
+        // contoh switch case
+        var d = 10;
+
+        switch (d) {
+            case 1: 
+                console.log('Hari ini hari Minggu')
+                break;
+            case 2:
+                console.log('Hari ini hari Senin')
+                break;
+            case 3:
+                console.log('Hari ini hari Selasa')
+                break;
+            case 4:
+                console.log('Hari ini hari Rabu')
+                break;
+            default:
+                console.log('Hari ini hari Libur!')
+        }
+
+        const colors = ['Merah', 'Biru', 'Kuning', 'Hijau'];
+        console.log(colors[0])
+        // console.log(colors.sort())
+        console.log(colors.reverse())
+
+        // for(var i = 4; i <= 5; i++){
+        //     console.log("Number: " + i);
+        // }
+
+        // for (var i = 2; i <= colors.length; i++) {
+        //     console.log("Number: " + i);
+        // }
+
+        for (var i in colors){
+            console.log("Number: " + colors[i]);
+        }
+        
+        function sum(x, y){
+            let s = x + y;
+            return s;
+        }
+
+        console.log(sum(4, 1));
+    </script>
+</body>
+</html>

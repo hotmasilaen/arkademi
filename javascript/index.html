@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write('Hello word..!')
+    </script>
+    <style>
+        button{
+            background-color: red;
+        }
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="myButton">click me!</button><br/>
+    <img id="myImage" src="../icon-pendidikan.png" />
+
+    <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+    
+    <p id="demo"></p>
+
+    <script src="./hello.js"></script>
+
+    <script>
+        function myFunction(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            let coordinate = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coordinate;
+        }
+
+        function clearCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+    </script>
+
+    <h2>JavaScript switch</h2>
+    
+    <p id="demo"></p>
+    
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+</body>
+</html>

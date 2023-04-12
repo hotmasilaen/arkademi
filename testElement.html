@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+    <script>
+        function validation() {
+            console.log('masuk');
+            let x = document.forms["myForms"]["fname"].value;
+            if(x == ""){
+                alert("Nama harus diisi yaaa");
+                return false;
+            }
+        }
+    </script>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arkademi</h1>
+    <img src="./image-new-hero-comp.c0ee2441.png" alt="ini sebenarnya gambar"/>
+    <a href="https://arkademi.com/">Link Arkademi klik disini</a>
+
+    <!-- ini form -->
+    <form name="myForms" onsubmit="return validation()" method="post">
+        Name: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+
+    <p >Copyright &copy; 2014 W3C</p>
+    <p >Copyright © 2014 W3C</p>
+
+    <h1> The "&" character</h1>
+    <h1> The &quot;&amp;&quot; character</h1>
+
+    <p>
+        Kursus Online dari <br/> 
+        Pelatihan Resmi untuk
+    </p>
+
+    <table>
+        <head>
+            <tr>
+                <th>Nama</th>
+                <th>Pekerjaan</th>
+                <th>Umur</th>
+                <th>Alamat</th>
+                <th>Hobby</th>
+            </tr>
+        </head>
+        <body>
+            <tr>
+                <td>Santi</td>
+                <td>Dokter</td>
+                <td>32 tahun</td>
+                <td>Jakarta</td>
+                <td>Membaca</td>
+            </tr>
+            <tr>
+                <td>Anto</td>
+                <td>Dokter</td>
+                <td>32 tahun</td>
+                <td>Jakarta</td>
+                <td>Membaca</td>
+            </tr>
+        </body>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>ARKADEMI | Kursus Online Bersertifikat #1 | masuk</title>
+    <style>
+        .wrapping-content{
+            justify-content: space-between;
+            position: relative;
+            padding-top: 4.857vw;
+            padding-bottom: 10.7vw;
+            margin: auto;
+            width: 80%;
+            z-index: 1;
+            display: flex;
+        }
+        .container{
+            justify-content: space-between;
+            position: relative;
+            padding-top: 4.857vw;
+            padding-bottom: 10.7vw;
+            margin: auto;
+            width: 80%;
+            z-index: 1;
+        }
+        .sub-title-blue{
+            color: #006cbb;
+        }
+        .article-container{
+            display: flex;
+            align-items: center;
+        }
+        .article-desc{
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        .title{
+            font-family: "Montserrat";
+            font-weight: 800;
+            font-size: 2.378vw;
+            line-height: 3.264vw;
+            color: #1c1d20;
+            margin-bottom: 1.25vw;
+        }
+        button{
+            background: linear-gradient(261.28deg,#ff9417 18.17%,#ff8017 84.69%);
+            border-radius: 0.429vw;
+            border: none;
+            outline: none;
+            min-width: 24.285vw;
+            height: 3.932vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 0.701vw;
+            gap: 0.701vw;
+            font-family: "Montserrat";
+            font-weight: 800;
+            font-size: 1.097vw;
+            line-height: 1.357vw;
+            letter-spacing: .013vw;
+            color: #fff;
+            margin-top: 4rem;
+        }
+        /* ini dari tag name html */
+        /* h1{
+            font-size: 12px;
+        } */
+
+        .title1{
+            color: red;
+        }
+        .title2{
+            color: #d1944f;
+        }
+
+        .contoh{
+            font-size: x-large;
+            color: yellow;
+        }
+        #container{
+            color: black;
+            font-size: 32px;
+            /* background-color: orange; */
+            /* background-image: url(./image-new-hero-comp.c0ee2441.png); */
+            /* background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: bottom; */
+            height: 70vh;
+            /* max-height: 50vh; */
+            min-height: 50vh;
+            border: 1px solid black;
+            /* border-style: dashed; */
+            border-width: 3px;
+            border-color: red;
+            border-radius: 10px;
+            /* padding: 40px 20px 10px 15px; */
+            /* padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px; */
+            width: 10vh;
+            /* min-width: 50vh; */
+            max-width: 50vh;
+        }
+        img{
+            filter: blur(2px);
+        }
+        div{
+            width: 100%;
+            height: 100px;
+            /* background-color: #d1944f; */
+            /* transition: width 2s; */
+            /* transition: width 2s, height 2s, transform 2s; */
+            /* transition-delay: 2s; */
+            /* animation: putar 2s ease 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: backwards; */
+        }
+
+        .box-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .kotak1{
+            background-color: #d1944f;
+        }
+        .kotak2{
+            background-color: #006cbb;
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* div{
+
+                background-color: blue;
+                height: 50px;
+            } */
+
+           .box-container{
+                flex-direction: column;
+           }
+        }
+        @media only screen and (min-width: 600px) {
+            /* div{
+
+                background-color: blue;
+                height: 50px;
+            } */
+
+           .box-container{
+                flex-direction: row;
+           }
+        }
+        /* div:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        } */
+
+        @keyframes putar {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 500px;
+            }
+        }
+
+
+
+
+        /* header{
+            background-color: beige;
+            background-image: url(./image-new-hero-comp.c0ee2441.png);
+            background-size: cover;
+            background-position: center;
+            color: black;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+        h1{
+            margin: auto;
+            color: white;
+            text-align: center;
+            /* font-size: 4vw; */
+            /* font-size: 4vmax; */
+        /* } */
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <h1>Selamat datang di SESI 3 BELAJAR CSS - Test viewport</h1>
+    </header>
+    <div class="wrapping-content">
+        <div class="container">
+            <h1 class="title">Kursus Online dari <br/>
+                Lembaga Pelatihan <u>Resmi</u> untuk</h1>
+            <h1 class="sub-title-blue">Tingkatkan Karier Profesionalmu</h1>
+            <p>
+                Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan
+                karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi
+                profesi.
+            </p>
+            <div class="article-container">
+                <img src="./icon-pendidikan.png" width="25" height="25"/>
+                <p class="article-desc">
+                    Arkademi adalah <span><b>kursus dan pendidikan resmi berlisensi</b></span> dari Kementrian Pendidikan, Kebudayaan, Riset, dan
+                    Teknologi RI
+                </p>
+            </div>
+            <button>
+                Lihat yang sesuai untuk Kariermu
+            </button>
+        </div>
+        <div>
+            <img src="./image-new-hero-comp.c0ee2441.png" />
+        </div>
+    </div> -->
+    <!-- <h1 class="title">Kursus Online dari <br />
+        Lembaga Pelatihan <u>Resmi</u> untuk</h1> -->
+    <!-- <h1 class="title1">Selamat datang di kelas Pra Kerja SESI 3</h1>
+    <h1 class="title2">Selamat datang di kelas Pra Kerja</h1>
+    <p class="contoh">Selamat datang di kelas Pra Kerja SESI 3 -- BAGIAN 2</p>
+    <div id="container">Selamat datang di kelas Pra Kerja SESI 3 -- BAGIAN 2</div> -->
+    <!-- <img src="./image-new-hero-comp.c0ee2441.png" width="400" height="350" /> -->
+
+
+    <!-- Transition Element -->
+    <div class="box-container">
+        <div class="kotak1" >Kotak 1
+            <!-- <img src="./image-new-hero-comp.c0ee2441.png" width="400" height="350" /> -->
+        </div>
+        <div class="kotak2">Kotak 2
+            <!-- <img src="./image-new-hero-comp.c0ee2441.png" width="400" height="350" /> -->
+        </div>
+    </div>
+
+    <!-- <header>
+        <h1>Selamat datang di kelas Pra Kerja SESI 3</h1>
+    </header> -->
+
+</body>
+</html>
